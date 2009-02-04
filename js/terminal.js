@@ -150,6 +150,7 @@ Terminal = Class.create({
 			commit +=  "<\/div>";
 			var commitEl = new Element('div').update(commit);
 			git.addData(commitEl);
+			Effect.ScrollTo("the_end");
 		}});
 	},
 	exec: function(command){

@@ -129,7 +129,6 @@ Terminal = Class.create({
 		},
 		diff: function(data){
 			$("terminal_console").setStyle({textDecoration:'none'});
-			console.log(data);
 			var commit = "<div>";
 			commit += "<blockquote class=\'pink\'>"+data.commit.message+"<\/blockquote>";
 			commit += "<a href=\'"+data.commit.url+"\' class=\'yellow\'>commit "+data.commit.id+"<\/a>";
@@ -177,7 +176,6 @@ Terminal = Class.create({
 	},
 	getData: function(url,callback){
 		var sc = new Element('script', {src:url+"?callback="+callback});
-		console.log(sc);
 		$(document.body).insert(sc);
 	},
 });
